@@ -8,40 +8,40 @@ const Skills = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "React", level: 95, color: "bg-blue-500" },
+        { name: "React", level: 75, color: "bg-blue-500" },
         { name: "JavaScript", level: 90, color: "bg-yellow-500" },
-        { name: "TypeScript", level: 85, color: "bg-blue-600" },
-        { name: "HTML/CSS", level: 95, color: "bg-orange-500" },
-        { name: "Tailwind CSS", level: 90, color: "bg-teal-500" },
-        { name: "Vue.js", level: 75, color: "bg-green-500" }
+        { name: "HTML", level: 95, color: "bg-orange-500" },
+        { name: "CSS", level: 95, color: "bg-blue-500" },
+        { name: "Tailwind CSS", level: 90, color: "bg-teal-500" },   
+        { name: "Sass", level: 75, color: "bg-pink-500" },
+        
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 85, color: "bg-green-600" },
-        { name: "Python", level: 80, color: "bg-blue-400" },
-        { name: "Express.js", level: 85, color: "bg-gray-600" },
-        { name: "MongoDB", level: 80, color: "bg-green-700" },
+        
+        { name: "Django", level: 80, color: "bg-green-950" },
+        { name: "MySQL", level: 85, color: "bg-blue-200" },
+        { name: "MongoDB", level: 50, color: "bg-green-700" },
         { name: "PostgreSQL", level: 75, color: "bg-blue-700" },
-        { name: "GraphQL", level: 70, color: "bg-pink-500" }
+        { name: "PHP", level: 90, color: "bg-indigo-400" }
       ]
     },
     {
       title: "Tools & Others",
       skills: [
         { name: "Git", level: 90, color: "bg-red-600" },
-        { name: "Docker", level: 75, color: "bg-blue-600" },
-        { name: "AWS", level: 70, color: "bg-orange-600" },
+        
         { name: "Figma", level: 85, color: "bg-purple-500" },
-        { name: "Jest", level: 80, color: "bg-red-500" },
-        { name: "Webpack", level: 75, color: "bg-blue-400" }
+     
       ]
     }
   ];
 
   return (
     <section id="skills" className={`py-20 ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className={`text-4xl md:text-5xl font-bold mb-4 ${
@@ -65,11 +65,22 @@ const Skills = () => {
                 isDark ? 'bg-gray-800' : 'bg-white'
               }`}
             >
-              <h3 className={`text-2xl font-bold mb-8 text-center ${
-                isDark ? 'text-white' : 'text-gray-800'
-              }`}>
-                {category.title}
-              </h3>
+                      <div className="flex flex-col items-center gap-4 mb-8">
+          <div className="h-20 w-full flex items-center justify-center mb-2">
+          <img
+            src={`https://skillicons.dev/icons?i=${category.skills
+              .map((skill) => skill.name.toLowerCase().replace(/\s+/g, ''))
+              .join(',')}&theme=${isDark ? 'dark' : 'light'}`}
+            alt={`${category.title} icons`}
+            className="h-full object-contain"
+          />
+        </div>
+          <h3 className={`text-2xl font-bold text-center ${
+            isDark ? 'text-white' : 'text-gray-800'
+          }`}>
+            {category.title}
+          </h3>
+        </div>
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="group">
