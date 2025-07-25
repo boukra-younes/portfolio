@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="text-center">
           <div className="mb-8 ">
             <img 
-              src="../../public/dd.jpg"
+              src="https://github.com/boukra-younes/portfolio/blob/main/public/dd.JPG?raw=true"
               alt="Younes Abdessamad Boukra"
               className=" w-[250px] h-[250px] rounded-full mx-auto shadow-xl ring-4 ring-white mt-16 "
             />
