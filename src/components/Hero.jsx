@@ -103,7 +103,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/boukra-younes"
               className={`transition-colors duration-300 transform hover:scale-110 ${
                 isDark
                   ? "text-gray-400 hover:text-blue-400"
@@ -113,7 +113,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:contact@boukrayounes.online"
               className={`transition-colors duration-300 transform hover:scale-110 ${
                 isDark
                   ? "text-gray-400 hover:text-blue-400"

@@ -1,0 +1,19 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="180"
+    height="40"
+    viewBox="0 0 180 40"
+    fill="none"
+>
+    <text
+        x="0"
+        y="28"
+        font-family="Inter, Poppins, Arial, sans-serif"
+        font-size="28"
+        font-weight="700"
+    >
+        <tspan fill="#2563EB">&lt;</tspan>
+        <tspan fill="currentColor">Yoones</tspan>
+        <tspan fill="#2563EB">/&gt;</tspan>
+    </text>
+</svg>
